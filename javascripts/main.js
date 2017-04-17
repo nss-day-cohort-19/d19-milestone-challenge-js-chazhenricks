@@ -16,9 +16,11 @@ function createTree(tree){
 
 if (tree.character == ""){
   character.className = "invalid";
+  alert("both fields must have an input");
 }
 if (tree.height == ""){
   height.className = "invalid";
+  alert("both fields must have an input");
 }
 
   var treeOnPage = document.getElementById("content");
