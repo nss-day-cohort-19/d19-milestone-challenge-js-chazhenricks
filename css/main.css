@@ -9,3 +9,7 @@
   text-align:center;
   letter-spacing: 10px;
 }
+
+.invalid{
+  border: 2px solid red;
+}
