@@ -1,0 +1,11 @@
+#height,
+#character {
+  display: block;
+  width: 250px;
+  margin-bottom: 1em;
+}
+
+#content {
+  text-align:center;
+  letter-spacing: 10px;
+}
