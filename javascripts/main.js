@@ -5,15 +5,19 @@ var tree = {};
 
 treeButton.addEventListener("click", function(){ createTree(tree);});
 
-
+window.addEventListener('keyup', function (e) {
+    if (e.keyCode === 13) {
+        createTree(tree);
+    }
+  });
 function createTree(tree){
   tree.character = document.getElementById("character").value;
   tree.height = Number(document.getElementById("height").value);
 
-if (tree.character === " "){
+if (tree.character == ""){
   character.className = "invalid";
 }
-if (tree.height === " "){
+if (tree.height == ""){
   height.className = "invalid";
 }
 
@@ -26,7 +30,7 @@ if (tree.height === " "){
   for (var i=0; i<tree.height; i++){
     makeup = tree.character.repeat(k);
     k  = k +2;
-    console.log(spaces+makeup);
+    console.log(spaces+"%c"+makeup, "color:red;");
     spaces = spaces.slice(0, j-1);
     j--;
   }
