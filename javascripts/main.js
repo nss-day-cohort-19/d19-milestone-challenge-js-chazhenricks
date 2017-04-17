@@ -17,10 +17,14 @@ function createTree(tree){
 if (tree.character == ""){
   character.className = "invalid";
   alert("both fields must have an input");
+}else {
+  character.className = "";
 }
 if (tree.height == ""){
   height.className = "invalid";
   alert("both fields must have an input");
+}else{
+  height.className="";
 }
 
   var treeOnPage = document.getElementById("content");
