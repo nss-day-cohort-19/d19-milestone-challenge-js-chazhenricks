@@ -5,7 +5,8 @@ var tree = {};
 
 treeButton.addEventListener("click", function(){ createTree(tree);});
 
-window.addEventListener('keyup', function (e) {
+document.getElementById("wrapper")
+  .addEventListener('keyup', function (e) {
     if (e.keyCode === 13) {
         createTree(tree);
     }
@@ -27,7 +28,7 @@ if (tree.height == ""){
   height.className="";
 }
 
-  var treeOnPage = document.getElementById("content");
+
   var makeup = "";
   var spaces = " ";
   spaces = spaces.repeat(tree.height);
